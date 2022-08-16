@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Appear,
   FlexBox,
@@ -12,6 +12,25 @@ import {
   Text,
   UnorderedList,
 } from "spectacle";
+
+const images = {
+  backend: require("../assetts/backend-sky.png"),
+  frontend: require("../assetts/frontend-sky.png"),
+  devops: require("../assetts/devops-sky.png"),
+};
+
+const LI = ({ text }) => {
+  return (
+    <>
+      <img
+        src={images[text.toLowerCase()]}
+        alt={`${text} bullet point`}
+        className="bulletImage"
+      />{" "}
+      {text}
+    </>
+  );
+};
 
 const Projects = () => {
   return (
@@ -36,8 +55,12 @@ const Projects = () => {
               <Appear>
                 <FlexBox>
                   <UnorderedList>
-                    <ListItem>Backend</ListItem>
-                    <ListItem>Frontend</ListItem>
+                    <ListItem>
+                      <LI text="Backend" />
+                    </ListItem>
+                    <ListItem>
+                      <LI text="Frontend" />
+                    </ListItem>
                   </UnorderedList>
                 </FlexBox>
               </Appear>
@@ -47,9 +70,15 @@ const Projects = () => {
               <Appear>
                 <FlexBox>
                   <UnorderedList>
-                    <ListItem>Backend</ListItem>
-                    <ListItem>Frontend</ListItem>
-                    <ListItem>DevOps</ListItem>
+                    <ListItem>
+                      <LI text="Backend" />
+                    </ListItem>
+                    <ListItem>
+                      <LI text="Frontend" />
+                    </ListItem>
+                    <ListItem>
+                      <LI text="DevOps" />
+                    </ListItem>
                   </UnorderedList>
                 </FlexBox>
               </Appear>
