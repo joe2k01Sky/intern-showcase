@@ -2,6 +2,7 @@ import "./styles/main.scss";
 import { Deck, Heading, Slide, Text } from "spectacle";
 import { theme } from "./theme";
 import BottomTemplate from "./BottomTemplate";
+import Projects from "./slides/Projects";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           Giuseppe Barillari
         </Heading>
       </Slide>
+      <Projects />
     </Deck>
   );
 }
