@@ -17,6 +17,7 @@ const images = {
   backend: require("../assetts/backend-sky.png"),
   frontend: require("../assetts/frontend-sky.png"),
   devops: require("../assetts/devops-sky.png"),
+  docops: require("../assetts/docops-sky.png"),
 };
 
 const LI = ({ text }) => {
@@ -78,6 +79,9 @@ const Projects = () => {
                     </ListItem>
                     <ListItem>
                       <LI text="DevOps" />
+                    </ListItem>
+                    <ListItem>
+                      <LI text="DocOps" />
                     </ListItem>
                   </UnorderedList>
                 </FlexBox>
