@@ -1,0 +1,50 @@
+@keyframes spinRight {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinLeft {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.orbitContainer {
+  position: relative;
+}
+
+.outerOrbit {
+  position: absolute;
+  top: 10%;
+  width: 500px;
+  height: 500px;
+  border: 2px dashed $lightBlue;
+  border-radius: 100%;
+  animation: spinRight 60s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+
+    * {
+      animation-play-state: paused;
+    }
+  }
+}
+
+.person {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  width: 5%;
+  height: 5%;
+  border: 1px solid $lightBlue;
+  border-radius: 100%;
+  background-color: white;
+  padding: 1rem;
+  img {
+    width: 80%;
+    height: 80%;
+    animation: spinLeft 60s linear infinite;
+  }
+}

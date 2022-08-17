@@ -3,3 +3,16 @@ $red: rgb(255, 0, 0);
 $purple: rgb(181, 0, 125);
 $blue: rgb(33, 66, 156);
 $lightBlue: rgb(0, 113, 255);
+$skyGradient: linear-gradient(
+  90deg,
+  #{$orange},
+  #{$red},
+  #{$purple},
+  #{$blue},
+  #{$lightBlue}
+);
+$purpleCyanGradient: linear-gradient(
+  90deg,
+  rgb(100, 16, 245),
+  rgb(117, 251, 221)
+);

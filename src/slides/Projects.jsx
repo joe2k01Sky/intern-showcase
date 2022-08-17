@@ -36,12 +36,12 @@ const LI = ({ text }) => {
 const Projects = () => {
   return (
     <Slide backgroundColor="white">
-      <Text className="gradientText" textAlign="center">
+      <Text className="gradientText skyGradient" textAlign="center">
         The projects
       </Text>
       <Table>
         <TableHeader>
-          <TableRow className="gradientText">
+          <TableRow className="gradientText skyGradient">
             <TableCell textAlign="center" color="transparent">
               Shadowing App
             </TableCell>

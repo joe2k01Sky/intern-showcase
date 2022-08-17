@@ -3,6 +3,7 @@ import { Deck, Heading, Slide, Text } from "spectacle";
 import { theme } from "./theme";
 import BottomTemplate from "./BottomTemplate";
 import Projects from "./slides/Projects";
+import Team from "./slides/Team";
 
 function App() {
   return (
@@ -16,11 +17,14 @@ function App() {
       )}
     >
       <Slide backgroundColor="white">
-        <Heading className="upperHeading gradientText">Intern Showcase</Heading>
-        <Heading className="gradientText" fontSize="h4">
+        <Heading className="upperHeading gradientText skyGradient">
+          Intern Showcase
+        </Heading>
+        <Heading className="gradientText skyGradient" fontSize="h4">
           Giuseppe Barillari
         </Heading>
       </Slide>
+      {/*<Team />*/}
       <Projects />
     </Deck>
   );

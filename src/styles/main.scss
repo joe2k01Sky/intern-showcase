@@ -1,16 +1,17 @@
 @import "./variables.scss";
+@import "./orbits.scss";
 
 .gradientText {
-  background-image: linear-gradient(
-    90deg,
-    #{$orange},
-    #{$red},
-    #{$purple},
-    #{$blue},
-    #{$lightBlue}
-  );
   background-clip: text;
   color: transparent !important;
+}
+
+.skyGradient {
+  background-image: $skyGradient;
+}
+
+.pcGradient {
+  background-image: $purpleCyanGradient;
 }
 
 .gradientBackground {
