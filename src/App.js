@@ -24,7 +24,7 @@ function App() {
           Giuseppe Barillari
         </Heading>
       </Slide>
-      {/*<Team />*/}
+      <Team />
       <Projects />
     </Deck>
   );

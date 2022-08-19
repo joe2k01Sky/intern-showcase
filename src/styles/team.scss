@@ -1,0 +1,35 @@
+.cardContainer {
+  background-image: $purpleCyanGradient;
+  border-radius: 25px;
+  padding: 3px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 25px;
+}
+
+.listContainer {
+  display: table;
+  ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+.hide {
+  opacity: 0;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.fadeIn {
+  opacity: 1;
+  transition: opacity 0.5s;
+}

@@ -1,31 +1,82 @@
 import React from "react";
-import { Box, FlexBox, Slide, Text } from "spectacle";
+import {
+  Box,
+  FlexBox,
+  ListItem,
+  Slide,
+  Stepper,
+  Text,
+  UnorderedList,
+} from "spectacle";
 
-const person = require("../assetts/person-sky.png");
-
-const Orbit = ({ orbitClass, children }) => {
-  return <FlexBox className={orbitClass}>{children}</FlexBox>;
+const people = {
+  Business: [
+    "Diana Odeleye",
+    "Stefania Popescu",
+    "Alex Drage",
+    "Michelle Baker",
+  ],
+  Delivery: [
+    "Alfonso Ristorato",
+    "Myles Gordon",
+    "Ross Keeley",
+    "Julien Mahé-Crenn",
+    "Abdirisak Ahmed",
+    "Rafael Barros Parigi",
+    "Heather Paterson",
+    "Daniel Hope",
+    "Giuseppe Barillari",
+    "Baba Ojo",
+  ],
 };
 
-const Person = () => {
+const Card = ({ team, extraClass }) => {
   return (
-    <Box className="person">
-      <img src={person} alt="" />
+    <Box className={`cardContainer ${extraClass}`} id={team}>
+      <FlexBox className="card" flexDirection="column">
+        <Text className="gradientText pcGradient">{team}</Text>
+        <div className="listContainer">
+          <UnorderedList listStyleType="none" margin="0px" padding="0px">
+            {people[team].map((person) => (
+              <ListItem key={person} fontSize="x-large">
+                {person}
+              </ListItem>
+            ))}
+          </UnorderedList>
+        </div>
+      </FlexBox>
     </Box>
+  );
+};
+
+const BusinessTeam = ({ extraClass }) => {
+  return <Card team="Business" extraClass={extraClass} />;
+};
+
+const DeliveryTeam = ({ extraClass }) => {
+  return <Card team="Delivery" extraClass={extraClass} />;
+};
+
+const MyStepper = ({ value }) => {
+  return (
+    <>
+      <BusinessTeam extraClass={value === "business" ? "fadeIn" : "fadeOut"} />
+      <DeliveryTeam extraClass={value === "business" ? "hide" : "fadeIn"} />
+    </>
   );
 };
 
 const Team = () => {
   return (
     <Slide backgroundColor="white">
-      <Text className="gradientText pcGradient" textAlign="center">
+      <Text className={`gradientText skyGradient`} textAlign="center">
         The Team
       </Text>
-      <FlexBox className="orbitContainer">
-        <Orbit orbitClass="outerOrbit">
-          <Person />
-        </Orbit>
-      </FlexBox>
+      <Stepper values={["business", "delivery"]}>
+        {(value, _, isActive) =>
+          isActive ? <MyStepper value={value} /> : <></>
+        }
+      </Stepper>
     </Slide>
   );
 };
