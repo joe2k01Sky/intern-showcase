@@ -5,6 +5,7 @@ import BottomTemplate from "./BottomTemplate";
 import Projects from "./slides/Projects";
 import Team from "./slides/Team";
 import FrontendTabs from "./slides/FrontendTabs";
+import FrontendSearchbar from "./slides/FrontendSearchbar";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Team />
       <Projects />
       <FrontendTabs />
+      <FrontendSearchbar />
     </Deck>
   );
 }

@@ -6,6 +6,7 @@
   "author": "Giuseppe Barillari <giuseppe.barillari@sky.uk>",
   "private": true,
   "dependencies": {
+    "@fastify/cors": "^8.1.0",
     "fastify": "^4.5.2"
   },
   "scripts": {

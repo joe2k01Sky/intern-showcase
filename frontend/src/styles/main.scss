@@ -8,6 +8,7 @@
 @import "./frontend/variables";
 @import "./frontend/button";
 @import "./frontend/tabs";
+@import "./frontend/backend-searchbar";
 
 .gradientText {
   background-clip: text;
@@ -20,6 +21,10 @@
 
 .pcGradient {
   background-image: $purpleCyanGradient;
+}
+
+.opGradient {
+  background-image: $orangePinkGradient;
 }
 
 .gradientBackground {
@@ -44,6 +49,6 @@ li {
 }
 
 .bulletImage {
-    width: 2rem;
-    height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
