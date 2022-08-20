@@ -1,0 +1,46 @@
+$breakpoints: (
+  small-phone: (
+    max-width: 568px
+  ),
+  phone: (
+    max-width: 668px
+  ),
+  in-between-phones: (
+    max-width: 736px
+  ),
+  ipad: (
+    max-width: 767px
+  ),
+  tablet: (
+    max-width: 970px
+  ),
+  laptop: (
+    max-width: 1025px
+  ),
+  desktop: (
+    max-width: 1441px
+  ),
+  large-monitor: (
+    //supports up to 6k
+    max-width: 6144px
+  ),
+  large-monitor-resize: (
+    max-width: 823px
+  )
+) !default;
+
+// Colours ---------------------------
+$primary-colour: #aa115f;
+$darker-primary-colour: #760251;
+$lighter-primary-colour-1: #9f4e72;
+$lighter-primary-colour-2: #b57693;
+$lighter-primary-colour-3: #c491a8;
+$lighter-primary-colour-4: #e7d3dc;
+
+$shadow-colour: #861b6265;
+
+$white: #fff;
+
+$link-colour: rgb(1, 183, 215);
+$link-colour-hover: rgb(0, 97, 114);
+$warning-colour: rgb(236, 139, 11);

@@ -1,0 +1,64 @@
+/*.button {
+  flex: 1;
+  margin: 2px;
+}*/
+
+.c-btn {
+  align-items: center;
+  height: fit-content;
+  padding: 5px;
+  line-height: 1.5em;
+}
+
+/*.c-btn--full {
+  display: block;
+  width: 100%;
+}*/
+
+.c-btn--primary {
+  color: $white;
+  background-color: $primary-colour;
+  border-color: $primary-colour;
+  &:hover,
+  &:active {
+    background-color: $darker-primary-colour;
+    border-color: $darker-primary-colour;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+      0 1px 15px 3px $darker-primary-colour;
+  }
+  .btn-icon {
+    fill: $white;
+  }
+}
+
+.c-btn--secondary {
+  color: $primary-colour;
+  border-color: $primary-colour;
+  &:hover,
+  &:active {
+    background-color: $darker-primary-colour;
+    color: $white;
+    border-color: $darker-primary-colour;
+  }
+  :focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+  .btn-icon {
+    fill: $primary-colour;
+  }
+}
+
+.btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.btn-disabled {
+  cursor: not-allowed;
+}

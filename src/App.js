@@ -1,9 +1,10 @@
 import "./styles/main.scss";
-import { Deck, Heading, Slide, Text } from "spectacle";
+import { Deck, Heading, Slide } from "spectacle";
 import { theme } from "./theme";
 import BottomTemplate from "./BottomTemplate";
 import Projects from "./slides/Projects";
 import Team from "./slides/Team";
+import Frontend from "./slides/Frontend";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       </Slide>
       <Team />
       <Projects />
+      <Frontend />
     </Deck>
   );
 }

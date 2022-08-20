@@ -1,6 +1,13 @@
 @import "./variables.scss";
 //@import "./orbits.scss";
 @import "./team.scss";
+@import "./frontend.scss";
+
+@import "sky-toolkit-core/all";
+@import "sky-toolkit-ui/all";
+@import "./frontend/variables";
+@import "./frontend/button";
+@import "./frontend/tabs";
 
 .gradientText {
   background-clip: text;
