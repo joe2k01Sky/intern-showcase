@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for my intern presentation",
+  "main": "server.js",
+  "author": "Giuseppe Barillari <giuseppe.barillari@sky.uk>",
+  "private": true,
+  "dependencies": {
+    "fastify": "^4.5.2"
+  },
+  "scripts": {
+    "start": "node server"
+  }
+}
