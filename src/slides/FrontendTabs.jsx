@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Appear, Box, FlexBox, Heading, Quote, Slide, Text } from "spectacle";
+import { Appear, FlexBox, Heading, Quote, Slide, Text } from "spectacle";
 import Button from "./frontend/Button";
 import Tabs from "./frontend/Tabs";
 
-const Frontend = () => {
+const FrontendTabs = () => {
   const [tab, setTab] = useState(0);
   const [tabsArray, setTabsArray] = useState(["Tab 0", "Tab 1"]);
 
@@ -51,4 +51,4 @@ const Frontend = () => {
   );
 };
 
-export default Frontend;
+export default FrontendTabs;

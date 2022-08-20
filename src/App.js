@@ -4,7 +4,7 @@ import { theme } from "./theme";
 import BottomTemplate from "./BottomTemplate";
 import Projects from "./slides/Projects";
 import Team from "./slides/Team";
-import Frontend from "./slides/Frontend";
+import FrontendTabs from "./slides/FrontendTabs";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
       </Slide>
       <Team />
       <Projects />
-      <Frontend />
+      <FrontendTabs />
     </Deck>
   );
 }
