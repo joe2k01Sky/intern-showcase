@@ -6,6 +6,7 @@ import Projects from "./slides/Projects";
 import Team from "./slides/Team";
 import FrontendTabs from "./slides/FrontendTabs";
 import FrontendSearchbar from "./slides/FrontendSearchbar";
+import AgileUni from "./slides/AgileUni";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Projects />
       <FrontendTabs />
       <FrontendSearchbar />
+      <AgileUni />
     </Deck>
   );
 }
