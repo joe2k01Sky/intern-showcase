@@ -7,6 +7,7 @@ import Team from "./slides/Team";
 import FrontendTabs from "./slides/FrontendTabs";
 import FrontendSearchbar from "./slides/FrontendSearchbar";
 import AgileUni from "./slides/AgileUni";
+import Numbers from "./slides/Numbers";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       </Slide>
       <Team />
       <Projects />
+      <Numbers />
       <FrontendTabs />
       <FrontendSearchbar />
       <AgileUni />
