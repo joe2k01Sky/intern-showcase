@@ -4,6 +4,7 @@ export const theme = {
     secondary: "black"
   },
   fonts: {
-    header: '"Roboto", Helvetica, Arial, sans-serif',
+    header: 'Sky Text',
+    text: 'Sky Text'
   },
 };
