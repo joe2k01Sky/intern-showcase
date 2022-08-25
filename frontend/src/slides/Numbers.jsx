@@ -46,11 +46,11 @@ const LI = ({ text, colour, icon, trademark }) => {
 };
 
 const numbers = {
-  lines: 7860 + 949,
-  commits: 112 + 35,
-  reviewed: 8 + 7,
-  prs: 12 + 7,
-  tickets: 19,
+  lines: 8788 + 444 + 949,
+  commits: 133 + 11 + 35,
+  reviewed: 9 + 7,
+  prs: 13 + 7,
+  tickets: 21,
   courses: 3,
 };
 
@@ -83,12 +83,12 @@ const Numbers = () => {
             colour="rgb(33, 66, 156)"
           />
           <LI
-            text={`${numbers.tickets} closed tickets`}
+            text={`${numbers.tickets} tickets closed`}
             icon={<GoIssueClosed />}
             colour="rgb(0, 113, 255)"
           />
           <LI
-            text={`${numbers.courses} LinkedIn Learning courses`}
+            text={`${numbers.courses} LinkedIn Learning courses completed`}
             icon={<BsLinkedin />}
             colour="rgb(51, 118, 176)"
             trademark
