@@ -10,23 +10,19 @@ import {
 } from "spectacle";
 
 const people = {
-  Business: [
-    "Diana Odeleye",
-    "Stefania Popescu",
-    "Alex Drage",
-    "Michelle Baker",
-  ],
+  Business: ["Diana Odeleye", "Michelle Baker", "Stefania Popescu"],
   Delivery: [
-    "Alfonso Ristorato",
-    "Myles Gordon",
-    "Ross Keeley",
-    "Julien Mahé-Crenn",
     "Abdirisak Ahmed",
-    "Rafael Barros Parigi",
-    "Heather Paterson",
-    "Daniel Hope",
-    "Giuseppe Barillari",
+    "Alex Drage",
+    "Alfonso Ristorato",
     "Baba Ojo",
+    "Daniel Hope",
+    "Heather Paterson",
+    "Julien Mahé-Crenn",
+    "Myles Gordon",
+    "Rafael Barros Parigi",
+    "Ross Keeley",
+    "Thomas Osmanski",
   ],
 };
 
