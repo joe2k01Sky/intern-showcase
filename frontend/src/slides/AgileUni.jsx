@@ -24,7 +24,7 @@ const AgileUni = () => {
       >
         Implementation
       </Heading>
-      <FlexBox>
+      <FlexBox className="contentContainer">
         <FlexBox className="videoContainer">
           <IconContext.Provider value={{ color: "#aa115f", size: "2rem" }}>
             {!playing && (
